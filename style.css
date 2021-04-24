@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+.nav-wrapper{
+    background-color:#212121;
+}
+
+
+h1{
+    position:relative;
+    left: 150px;
+    top: 70px;
+}
+
+
+
+.icon{
+    position: relative;
+    left: 700px; ;
+    
+}
+.bi1{
+    margin: 25px;
+    color:limegreen;
+}
+.bi2{
+    margin: 25px ;
+    color: blue;
+}
+.bi3{
+    margin: 25px;
+    color:#212121;
+
+}
+    
