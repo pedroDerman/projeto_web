@@ -3,7 +3,6 @@
     padding: 0;
     text-decoration: none;
 }
-
 .nav-wrapper{
     background-color: #212121;
     overflow:hidden;
@@ -61,11 +60,6 @@
     margin: 25px;
     color:#212121;
 
-}
-
-.roda_pe{
-    position: relative;
-    top: 390px;
 }
 
 #footer.page-footer{
