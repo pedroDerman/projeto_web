@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .nav-wrapper{
@@ -16,19 +17,37 @@
     left: 75px;
     overflow: hidden;
 }
-
-h1{
-    text-align: center;
-    position: relative;
-    top: 50px;
+.corpo{
+   
+    background-color:black;
 }
 
-.icon{
-    position:relative;
-    left: 500px; ;
-    top: 100px;
-    width: 300px;
+.fundo{
+    
+    width:100%;
+    height: 50%;
+    object-fit: cover;
     overflow: hidden;
+    opacity: 0.5;
+}
+
+
+.corpo h1{
+    font-size: 4rem;
+    position: absolute;
+    bottom:55%;
+    left:22%;
+    color:white;
+    
+}
+
+
+.icon{
+    position:absolute;
+    top: 50%;
+    left: 32%;
+    overflow: hidden;
+    
 }
 .bi1{
     margin: 25px;
@@ -49,5 +68,7 @@ h1{
     top: 390px;
 }
 
-
+#footer.page-footer{
+    background-color: #212121;
     
+}
