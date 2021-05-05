@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+  <script>
+   function resultado_media(){ 
+    var nome_aluno ="pedro"
+    var disciplina = "mat"
+    var nota_1 = 1
+    var nota_2 = 1
+     var media = 1;
+
+     if(media <= 3 ){
+          document.getElementById("if1").innerHTML =nome_aluno + "Reprovado em "+materia;
+
+        }else if(media > 3 && media < 7 ){
+          document.write("Recuperação")
+
+        }else if(media >= 7){
+          document.write("Aprovado")
+        }
+      }
+</script>
+
+</head>
+<body>  
+  
+  
+     
+  <div class="row">
+    <form class="col_s12" id="col_s12">
+      <div class="row">
+     
+        <div class="input-field col s6">
+          <input placeholder="" name="nome" id="nome" type="text" class="validate">
+          <label for="nome">Nome Completo</label>
+        </div>
+     
+        <div class="input-field col s6">
+          <input id="materia" name="materia" type="text" class="validate">
+          <label for="materia">Materia</label>
+        </div>
+      </div>
+     
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="nota_1" name="nota_1" type="text" class="validate">
+          <label for="nota_1">Nota 1</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="nota_2" name="nota_2" type="text" class="validate">
+          <label for="nota_2">Nota 2</label>
+        </div>
+      </div>
+  
+    </form>
+  </div>
+  <button class="btn waves-effect waves-light" onclick="resultado_media" type="submit" name="action">Submit
+  </button>
+
+  <h1 id="if1"></h1>
+  
+     
+</body>
+</html>
