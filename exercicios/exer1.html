@@ -12,23 +12,31 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+       #btn_left{
+        font-size: 30px;
+        }
+        h1{
+          text-align: center  ;
+        }
+    </style>
     
   <script>
    function resultado_media(){ 
-    var nome_aluno ="pedro"
-    var disciplina = "mat"
-    var nota_1 = 1
-    var nota_2 = 1
-     var media = 1;
+     var nome_aluno = col.nome.value
+     var disciplina = col.materia.value
+     var nota_1 = Number.parseFloat(col.nota_1.value)
+     var nota_2 = Number.parseFloat(col.nota_2.value)
+     var media = (nota_1+nota_2)/2 ;
 
      if(media <= 3 ){
-          document.getElementById("if1").innerHTML =nome_aluno + "Reprovado em "+materia;
+          document.getElementById("if1").innerHTML = (nome_aluno.toUpperCase() + ", está em Reprovado, em "+ disciplina)
 
         }else if(media > 3 && media < 7 ){
-          document.write("Recuperação")
+          document.getElementById("if1").innerHTML = (nome_aluno.toUpperCase() +", está em Recuperação, em "+ disciplina)
 
         }else if(media >= 7){
-          document.write("Aprovado")
+          document.getElementById("if1").innerHTML = (nome_aluno.toUpperCase() +", está Aprovado, em  " + disciplina )
         }
       }
 </script>
@@ -36,10 +44,10 @@
 </head>
 <body>  
   
-  
+  <h1>Exercicio 1</h1>
      
   <div class="row">
-    <form class="col_s12" id="col_s12">
+    <form class="col_s12" id="col_s12" name="col">
       <div class="row">
      
         <div class="input-field col s6">
@@ -49,7 +57,7 @@
      
         <div class="input-field col s6">
           <input id="materia" name="materia" type="text" class="validate">
-          <label for="materia">Materia</label>
+          <label for="materia">Matéria</label>
         </div>
       </div>
      
@@ -68,10 +76,14 @@
   
     </form>
   </div>
-  <button class="btn waves-effect waves-light" onclick="resultado_media" type="submit" name="action">Submit
+  <button id="btn_left" class="btn waves-effect waves-light" onclick="resultado_media()" type="submit" name="action">Verificar
   </button>
+  <h3 id="if1"></h3>
+  
+ 
 
-  <h1 id="if1"></h1>
+
+
   
      
 </body>

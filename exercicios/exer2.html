@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <script>
+          function resultado(){
+          var nome_cliente = col.nome.value
+          var produto = col.produto.value
+          var valor = Number.parseFloat (col.valor.value)
+          var quantidade = Number.parseInt (col.quantidade.value)
+          var quan_parcelamento = Number.parseInt (col.parcelamento.value)
+          var valor_do_juro
+          var valorTotalComJuro
+
+          if(quan_parcelamento > 6){ 
+            quan_parcelamento = null 
+            window.alert("A maior quantidade de parcelar é 6.")
+            }
+          
+           if(quan_parcelamento = 3){
+                valor_com_juros = Number.parseFlort(valor*0,03)
+                valorTotalComJuro = Number.parseFloat(valor) + parseFloat(valor_do_juro)
+
+           
+           }else if(quan_parcelamento = 6){
+               valor = (valor*0,012)
+            }
+            
+        }
+          
+          
+        document.getElementById("a0").innerHTML = (valorTotalComJuro)
+
+
+
+      </script>
+
+
+</head>
+<body>
+    <hi id="a0"></hi>
+    <h1>Exercicio 2</h1>
+    <div class="row">
+        <form class="col s12" name="col"> 
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="nome" id="nome" type="text" class="validate">
+              <label for="first_name">Nome Completo</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="produto" name="produto" type="text" class="validate">
+              <label for="last_name">Produto </label>
+            </div>
+          </div>
+                <div class="input-field col s6">
+                  <input  id="valor" name="valor" type="text" class="validate">
+                  <label for="first_name">Valor do Produto</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="quantidade" name="quantidade" type="text" class="validate">
+                  <label for="last_name">Quantidade de Produto</label>
+                </div>
+              </div>
+              <div class="input-field col s6">
+                <input id="parcelamento" name="parcelamento" type="text" class="validate">
+                <label for="last_name">Quantidade de Parcelas</label>
+              </div>
+            </div>
+           <button type="submit" onclick="resultado()">Click Aqui</button>  
+    
+</body>
+</html>
